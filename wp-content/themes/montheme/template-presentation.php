@@ -5,99 +5,107 @@ Template Name: presentation
 <head>
   <link rel="stylesheet" href="../../wp-content/themes/montheme/css/style_presentation.css">
 </head>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div id="primary" class="content-area">
 
 
-      <!-- Navigation & Intro -->
-      <header>
-
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-              <div class="container">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                      aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav mr-auto smooth-scroll">
-                          <li class="nav-item">
-                              <a class="nav-link" href="#home">Home
-                                  <span class="sr-only">(current)</span>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#about" data-offset="90">About</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#features" data-offset="90">Features</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#services" data-offset="90">Services</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#opinions" data-offset="30">Opinions</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#team" data-offset="90">Team</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#contact" data-offset="90">Contact</a>
-                          </li>
-                      </ul>
-                      <!-- Social Icon  -->
-                      <ul class="navbar-nav nav-flex-icons">
-                          <li class="nav-item">
-                              <a class="nav-link">
-                                  <i class="fa fa-facebook light-green-text-2"></i>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link">
-                                  <i class="fa fa-twitter light-green-text-2"></i>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link">
-                                  <i class="fa fa-instagram light-green-text-2"></i>
-                              </a>
-                          </li>
-                      </ul>
+  <!-- Intro -->
+  <header>
+    <!-- Video -->
+    <section class="view intro-video">
+      <video poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
+        <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+        </video>
+        <div class="hm-gradient">
+          <div class="full-bg-img">
+            <div class="container flex-center">
+              <div class="row pt-5 mt-3">
+                <div class="col-md-12 white-text text-center smooth-scroll">
+                  <div class="wow fadeInDown" data-wow-delay="0.2s">
+                    <h3 class="display-3 font-bold white-text mb-2">Creative Agency</h3>
+                    <hr class="hr-light my-4">
+                    <h4 class="subtext-header mt-2 mb-4">With guys that do things for your things.
+                    </h4>
                   </div>
-              </div>
-          </nav>
-
-          <!-- Video -->
-          <section class="view intro-video">
-              <video poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
-                  <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
-              </video>
-              <div class="hm-gradient">
-                  <div class="full-bg-img">
-                      <div class="container flex-center">
-                          <div class="row pt-5 mt-3">
-                              <div class="col-md-12 white-text text-center smooth-scroll">
-                                  <div class="wow fadeInDown" data-wow-delay="0.2s">
-                                      <h3 class="display-3 font-bold white-text mb-2">Creative Agency</h3>
-                                      <hr class="hr-light my-4">
-                                      <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur, nihil voluptatem.
-                                      </h4>
-                                  </div>
-                                  <a href="#about" data-offset="90" class="btn btn-rounded btn-outline-white wow fadeInUp" data-wow-delay="0.2s">
-                                      <i class="fa fa-home"></i> Visit us</a>
-                              </div>
-                          </div>
-                      </div>
+                  <a href="#main" data-offset="90" class="btn btn-rounded btn-outline-white wow fadeInUp">
+                    <i class="fa fa-info-circle"></i> Learn More</a>
                   </div>
+                </div>
               </div>
-          </section>
+            </div>
+          </div>
+        </section>
 
       </header>
-      <!-- Navigation & Intro -->
+      <!-- Intro -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+      <main id="main" class="site-main presentation">
 
-<?php
-get_footer();
+        <div class="row">
+          <div class="col-md-6">
+
+            <!--Card Primary-->
+            <div class="card indigo text-center z-depth-2">
+              <div class="card-body">
+                <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                  erat a ante.</p>
+                </div>
+              </div>
+              <!--/.Card Primary-->
+              <br>
+              <!--Card Danger-->
+              <div class="card pink lighten-2 text-center z-depth-2">
+                <div class="card-body">
+                  <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                    erat a ante.</p>
+                  </div>
+                </div>
+                <!--/.Card Danger-->
+                <br>
+                <!--Card Success-->
+                <div class="card info-color text-center z-depth-2">
+                  <div class="card-body">
+                    <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                      erat a ante.</p>
+                    </div>
+                  </div>
+                  <!--/.Card Success-->
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <!--Card Warning-->
+                  <div class="card red lighten-1 text-center z-depth-2">
+                    <div class="card-body">
+                      <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat a ante.</p>
+                      </div>
+                    </div>
+                    <!--/.Card Warning-->
+                    <br>
+                    <!--Card Info-->
+                    <div class="card success-color text-center z-depth-2">
+                      <div class="card-body">
+                        <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                          erat a ante.</p>
+                        </div>
+                      </div>
+                      <!--/.Card Info-->
+                      <br>
+                      <!--Card Default-->
+                      <div class="card mdb-color lighten-2 text-center z-depth-2">
+                        <div class="card-body">
+                          <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                            erat a ante.</p>
+                          </div>
+                        </div>
+                        <!--/.Card Default-->
+
+                      </div>
+                    </div>
+
+                  </main><!-- #main -->
+                </div><!-- #primary -->
+
+                <?php
+                get_footer();
