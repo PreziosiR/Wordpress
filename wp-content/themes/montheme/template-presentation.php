@@ -104,6 +104,86 @@ Template Name: presentation
                       </div>
                     </div>
 
+                    <div class="container">
+                      <center><h2>Meet Our Team</h2></center>
+
+                      <div class="row team-row">
+
+                        <div class="col-md-4 col-sm-6 team-wrap">
+                          <div class="team-member text-center">
+                            <div class="team-img">
+                              <img src="https://vignette.wikia.nocookie.net/lotr/images/d/df/31e479a509d95bc6b41f0ad574022afe.jpg/revision/latest?cb=20170404122040" alt="">
+                              <div class="overlay">
+                                <div class="team-details text-center">
+                                  <p>
+                                    Our web design team will spend time with our digital marketing team.
+                                  </p>
+                                  <div class="socials mt-20">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <h6 class="team-title">John Marshall</h6>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <!-- end team member -->
+
+                        <div class="col-md-4 col-sm-6 team-wrap">
+                          <div class="team-member text-center">
+                            <div class="team-img">
+                              <img src="https://vignette.wikia.nocookie.net/lotr/images/d/df/31e479a509d95bc6b41f0ad574022afe.jpg/revision/latest?cb=20170404122040" alt="">
+                              <div class="overlay">
+                                <div class="team-details text-center">
+                                  <p>
+                                    Our web design team will spend time with our digital marketing team.
+                                  </p>
+                                  <div class="socials mt-20">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <h6 class="team-title">Steve Roberts</h6>
+                            <span>Photographer</span>
+                          </div>
+                        </div>
+                        <!-- end team member -->
+
+                        <div class="col-md-4 col-sm-6 team-wrap">
+                          <div class="team-member last text-center">
+                            <div class="team-img">
+                              <img src="https://vignette.wikia.nocookie.net/lotr/images/d/df/31e479a509d95bc6b41f0ad574022afe.jpg/revision/latest?cb=20170404122040" alt="">
+                              <div class="overlay">
+                                <div class="team-details text-center">
+                                  <p>
+                                    Our web design team will spend time with our digital marketing team.
+                                  </p>
+                                  <div class="socials mt-20">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <h6 class="team-title">Michael Cartney</h6>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <!-- end team member -->
+
+                      </div>
+                    </div>
+
                   </main><!-- #main -->
                 </div><!-- #primary -->
 
