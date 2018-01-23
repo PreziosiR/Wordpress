@@ -156,15 +156,67 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// On importe le css graçe a get_header - get_footer
+
 function theme_enqueue_scripts() {
         wp_enqueue_style( 'Font_Awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
         wp_enqueue_style( 'Bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
         wp_enqueue_style( 'MDB', get_template_directory_uri() . '/css/mdb.min.css' );
         wp_enqueue_style( 'Style', get_template_directory_uri() . '/style.css' );
-        wp_enqueue_script( 'jQuery', get_template_directory_uri() . '/js/jquery-3.1.1.min.js', array(), '2.2.3', true );
+        wp_enqueue_script( 'jQuery', 'https://code.jquery.com/jquery-3.3.1.min.js' );
         wp_enqueue_script( 'Tether', get_template_directory_uri() . '/js/popper.min.js', array(), '1.0.0', true );
         wp_enqueue_script( 'Bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true );
         wp_enqueue_script( 'MDB', get_template_directory_uri() . '/js/mdb.min.js', array(), '1.0.0', true );
+				wp_enqueue_script( 'Index', get_template_directory_uri() . '/js/index.js' );
 
         }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
+
+// On enregistre le menu
+require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+register_nav_menus( array(
+    'navbar' => __( 'Navbar Menu Test', 'MonTheme' ),
+) );
+
+add_action( 'init', 'custom_bootstrap_slider' );
+
+// On enregistre le caroussel
+
+function custom_bootstrap_slider() {
+	$labels = array(
+		'name'               => _x( 'Slider', 'post type general name'),
+		'singular_name'      => _x( 'Slide', 'post type singular name'),
+		'menu_name'          => _x( 'Bootstrap Slide', 'admin menu'),
+		'name_admin_bar'     => _x( 'Slide', 'add new on admin bar'),
+		'add_new'            => _x( 'Ajouter un slide', 'Slide'),
+		'add_new_item'       => __( 'Name'),
+		'new_item'           => __( 'Ajouter un slide'),
+		'edit_item'          => __( 'Editer un slide'),
+		'view_item'          => __( 'Voir un slide'),
+		'all_items'          => __( 'Tous les slide'),
+		'featured_image'     => __( 'Image', 'text_domain' ),
+		'search_items'       => __( 'Rechercher un slide'),
+		'parent_item_colon'  => __( 'Slide parent'),
+		'not_found'          => __( 'Pas de slide trouvé.'),
+		'not_found_in_trash' => __( 'Pas slide en corbeille.'),
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'menu_icon'	     => 'dashicons-star-half',
+    	        'description'        => __( 'Description.'),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => true,
+		'menu_position'      => null,
+		'supports'           => array('title','editor','thumbnail')
+	);
+
+	register_post_type( 'slider', $args );
+}
