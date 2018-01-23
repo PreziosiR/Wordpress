@@ -24,7 +24,7 @@
 
 <body <?php body_class(); ?>>
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top black">
 		<div class="container">
 			<a class="navbar-brand" href="#"><?php bloginfo( 'name' ); ?></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,7 +1,7 @@
 <?php /*Template Name: contact.php*/?>
 <!-- Form register -->
 <?php get_header(); ?>
-<div class="container">
+<div class="container" style="padding-top: 100px;">
   <div class="row">
     <div class="col-6" style="display: block; margin: auto">
       <form>
@@ -23,7 +23,7 @@
          <label for="form8">Votre message</label>
         </div>
         <div class="text-center">
-            <button class="btn btn-deep-orange">Envoyer</button>
+            <button class="btn btn-primary">Envoyer</button>
         </div>
       </form>
     </div>

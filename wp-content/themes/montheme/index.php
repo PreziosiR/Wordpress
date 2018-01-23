@@ -90,7 +90,12 @@ get_header(); ?>
 	</div>
 </main><!-- #main -->
 </div><!-- #primary -->
-
+<script type="text/javascript">
+$('.navbar').removeClass('black');
+  $(document).ready(function(){
+    $('.navbar').addClass('scrolling-navbar');
+  })
+</script>
 <?php
 get_sidebar();
 get_footer();
