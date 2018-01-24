@@ -21,7 +21,7 @@ Template Name: presentation
               <div class="row pt-5 mt-3">
                 <div class="col-md-12 white-text text-center smooth-scroll">
                   <div class="wow fadeInDown" data-wow-delay="0.2s">
-                    <h3 class="display-3 font-bold white-text mb-2">Creative Agency</h3>
+                    <h3 class="display-3 font-bold white-text mb-2">dude</h3>
                     <hr class="hr-light my-4">
                     <h4 class="subtext-header mt-2 mb-4">With guys that do things for your things.
                     </h4>
