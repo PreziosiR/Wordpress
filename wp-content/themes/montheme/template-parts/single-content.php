@@ -8,14 +8,10 @@
  */
 
 ?>
-<div class="col-md-4">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<div class="card">
+		<header class="entry-header" style="padding-top: 100px">
 				<!--Card image-->
-				<?php montheme_post_thumbnail(); ?>
 				<?php if ( 'post' === get_post_type() ) : ?>
-					<div class="card-body">
 							<!--Title-->
 							<?php
 							if ( is_singular() ) :
@@ -30,8 +26,7 @@
 								$content = $content_post->post_content;
 								$url = $content_post->guid;
 							?>
-							<p class="card-text"><?php echo substr($content, 0, 50); ?> ... </p>
-							<a href="<?php echo $url; ?>" class="btn btn-primary">Lire la suite</a>
+							<?php echo $content; ?></p>
 					</div>
 			<?php
 			endif; ?>
