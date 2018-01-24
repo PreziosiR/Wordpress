@@ -31,9 +31,9 @@ get_header(); ?>
 			<div class="full-bg-img flex-center white-text">
 				<ul class="animated fadeInUp col-md-12">
 					<li>
-						<h1 class="h1-responsive flex-item font-bold">Bienvenue sur notre site</h1>
+						<h1 class="h1-responsive flex-item font-bold"><?php echo $slide->post_title ?></h1>
 						<li>
-							<p class="flex-item">Un site propulsé par Wordpress</p>
+							<p class="flex-item"><?php echo $slide->post_content ?></p>
 						</li>
 						<li>
 							<a href="#" class="btn btn-primary waves-effect" rel="nofollow">Decouvrir</a>
